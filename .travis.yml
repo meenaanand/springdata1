@@ -1,3 +1,9 @@
+addons:
+  apt:
+    packages:
+      - lynx
 language: java
 sudo: false
 script: mvn clean -Dtest=StudentControllerTest3 test && mvn surefire-report:report
+after_success:
+    - if [ -f /home/travis/build/meenaanand/springdata1/target/ site/surefire-report.html ]; then lynx -dump /home/travis/build/meenaanand/springdata1/target/ site/surefire-report.html; fi
