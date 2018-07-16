@@ -5,5 +5,11 @@ addons:
 language: java
 sudo: false
 script: mvn clean -Dtest=StudentControllerTest3 test && mvn surefire-report:report
+notifications:
+  slack:
+    on_success: always
+    on_failure: change
+    rooms:
+      secure: QxatsFxY9NaeW7qjxKjNR0N4
 after_success:
       - if [ -f /home/travis/build/meenaanand/springdata1/app/build/outputs/lint-results-debug.html ]; then lynx -dump /home/travis/build/meenaanand/springdata1/app/build/outputs/lint-results-debug.html; fi
