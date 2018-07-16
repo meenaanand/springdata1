@@ -6,4 +6,4 @@ INSERT INTO `student`(`id`, `name`) VALUES (3,'Student3');
 INSERT INTO `student`(`id`, `name`) VALUES (4,'Student4');
 INSERT INTO `student`(`id`, `name`) VALUES (5,'Student5');
 
-travis commit
+In Slack, Springdata1 channel added
