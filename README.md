@@ -7,4 +7,4 @@ INSERT INTO `student`(`id`, `name`) VALUES (4,'Student4');
 INSERT INTO `student`(`id`, `name`) VALUES (5,'Student5');
 
 In Slack, Springdata1 channel added
-Hreoku deployment
+final heroku deployment 
